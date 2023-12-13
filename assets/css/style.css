@@ -37,7 +37,7 @@ a {
   background: #171100;
 }
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
 }
 .heading-lv2 {
@@ -418,7 +418,7 @@ a {
   line-height: 1.54; /* 153.846% */
 }
 
-/* =======================Features===================== */
+/* =======================Features 1===================== */
 .features {
   margin-top: 135px;
   padding: 65px 0;
@@ -457,4 +457,187 @@ a {
   width: 137px;
   height: 50px;
   background: var(--bg-btn);
+}
+
+/* =======================Features 2===================== */
+.features-2nd {
+  margin-top: 70px;
+}
+.features-2nd .features-body .content {
+  width: 49%;
+}
+.features-2nd .features-body .images .lower {
+  width: 470px;
+  height: 440px;
+}
+
+/* =======================blog===================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+.blogs .blog-top {
+  text-align: center;
+}
+.blogs .blog-top .desc {
+  width: 448px;
+  margin: 16px auto 0;
+  color: #696262;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.blogs .blog-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+.blogs .blog-list .item {
+  border-radius: 16px;
+  background: #fff;
+  flex-shrink: 0;
+  /* width: 33%; */
+  width: calc(33.33% - 20px);
+  transition: all ease 0.5s;
+  /* transform: translateX(100%); */
+}
+.blogs .blog-list .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.blogs .blog-list .item .thumb {
+  border-radius: 16px 16px 0px 0px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+.blogs .item .info .date {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  padding-bottom: 12px;
+  line-height: 1.86; /* 185.714% */
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--bg-btn);
+  margin-right: 4px;
+}
+.blogs .item .date::after {
+  content: "";
+  right: -27px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.blogs .item .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.blogs .item .info .btn {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+.blogs .item .info .btn:hover {
+  background: var(--bg-btn);
+}
+.blogs .dots {
+  margin-top: 38px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.blogs .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.blogs .dots .dot.active {
+  background: var(--bg-btn);
+  cursor: default;
+}
+
+/* ===========================footer===================== */
+.footer {
+  background: #2e2100;
+  /* padding: 96px 135px 0; */
+  padding-top: 96px;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .row .column .desc {
+  padding: 18px 0;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+}
+.footer .column .title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+  border-bottom: 1px solid #59554b;
+  padding: 0 48px 14px 0;
+  display: inline-block;
+}
+.footer .column .list {
+  margin-top: 28px;
+}
+.footer .column .list a {
+  color: #bfbcb2;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .column .list li:last-child {
+  margin: 0;
+}
+.footer .column .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .copy-right {
+  padding: 28px 0;
+}
+.footer .copy-right {
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
 }
